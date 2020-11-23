@@ -29,3 +29,12 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+
+    length = len(word)
+    if (length % 2) == 0:
+        return False
+    else:
+        return True
+
+
+print(is_odd_string('A'))

@@ -1,4 +1,4 @@
-def reverse_vowels(s):
+def reverse_vowels(str1):
     """Reverse vowels in a string.
 
     Characters which re not vowels do not change position in string, but all
@@ -19,3 +19,18 @@ def reverse_vowels(s):
     reverse_vowels("why try, shy fly?")
     'why try, shy fly?''
     """
+    vowels = ""
+    for char in str1:
+        if char in "aeiouAEIOU":
+            vowels += char
+        result_string = ""
+    for char in str1:
+        if char in "aeiouAEIOU":
+            result_string += vowels[-1]
+            vowels = vowels[:-1]
+        else:
+            result_string += char
+    return result_string
+
+
+print (reverse_vowels("aeiou"))
