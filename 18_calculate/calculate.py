@@ -1,7 +1,5 @@
 def calculate(operation, a, b, make_int=False, message='The result is'):
  
-    
-
     if operation == 'add':
         res = a + b
     elif operation == 'substract':
